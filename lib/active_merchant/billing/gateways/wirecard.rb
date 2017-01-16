@@ -86,7 +86,6 @@ module ActiveMerchant #:nodoc:
       end
 
       def oct(money, oct_type, options = {})
-        options[:credit_card] = creditcard
         if oct_type.is_a? String
           options[:guwid] = oct_type
         else
